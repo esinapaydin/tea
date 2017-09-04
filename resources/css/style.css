@@ -5,12 +5,15 @@ body{
   text-align: center;
   opacity: 0.9;
   font-size: 22px;
+  margin: auto;
 }
 header{
   border-bottom: 1px solid seashell;
   align-items: center;
   height: 69px;
-  display: flex;
+  position:fixed;
+  background-color:black;
+  width:100%;
 }
 header img{
   height: 50px;
