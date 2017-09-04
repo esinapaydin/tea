@@ -10,6 +10,7 @@ header{
   border-bottom: 1px solid seashell;
   align-items: center;
   height: 69px;
+  display: flex;
 }
 header img{
   height: 50px;
