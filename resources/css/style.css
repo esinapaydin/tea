@@ -1,68 +1,130 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>MyTimes</title>
-       <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header class=headercontainer>
-      <div class=logo>
-        <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png"/>
-      </div>
-   <nav>
-      <span><a href="#">Mission</a></span>
-      <span><a href="#">Featured Tea</a></span>
-      <span><a href="#">Locations</a></span>
-    </nav>
-    </header>
-  <div class=container>
-    <div class=maintitle>
-      <div class=maincontext>
-    <h2>Our Mission</h2>
-    <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
-      </div><!--maincontext-->
-    </div><!--maintitle-->
-    
-    <div class=month>
-      <div class=monthtitle>
-        <h2 class=h2>Tea Of The Month</h2>
-        <h4 class=h4>What's Steeping at The Tea Cozy?</h4>
-      </div><!--monthtitle-->
-      <div class=images>
-        <div class=item><img class=image1 src=https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg>
-        <span class=span>Fall Berry Blitz Tea</span></div>
-         <div class=item><img class=image2 src=https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg><span class=span>Spiced Rum Tea</span></div>
-         <div class=item><img class=image3 src=https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg><span class=span>Seasonal Donuts</span></div>
-        <div class=item> <img class=image4 src=https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myrtle-ave.jpg><span class=span>Myrtle Ave Tea</span></div>
-        <div class=item> <img class=image5 src=https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg><span class=span>Bedford Bizarre Tea</span></div>
-      </div><!--images-->
-    </div><!--month-->
-     <div class=locations>
-      <h2 class=loctext>Locations</h2>
-    <div class=locs>
-    <div class=box>
-      <h3>Downtown</h3>
-      <h4><p>384 West 4th St</p><p>Suite 108</p><p>Portland, Maine</p></h4>
-      </div>
-       <div class=box>
-      <h3>East Bayside</h3>
-      <h4><p>3433 Phisherman's Avenue</p><p>(Northwest Corner)</p><p>Portland, Maine</p></h4>
-      </div> <div class=box>
-      <h3>Oakdale</h3>
-      <h4><p>515 Crescent Avenue</p><p>Second Floor</p><p>Portland, Maine</p></h4>
-      </div>
-      </div><!--locs-->
-    </div><!--locations-->
-    </div><!--class=container-->
-   <br><br>
-      <h2>The Tea Cozy</h2>
-    <h5>contact@theteacozy.com</h5>
-    <h5>917-555-8904</h5>
-    <footer>
-      <h5>copyright The Tea Cozy</h5>
-    
-    
-    </footer>
-  </body>
-</html>
+body{
+  background-color:black;
+  font-family: "Helvetica", sans-serif;
+  color: seashell;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 22px;
+  margin: auto;
+}
+header{
+  border-bottom: 1px solid seashell;
+  align-items: center;
+  height: 69px;
+  position:fixed;
+  background-color:black;
+  width:100%;
+}
+header img{
+  height: 50px;
+  padding-left: 10px;
+}
+header a{
+  color:seashell;
+  padding:20px 10px;
+  font-size:22px;
+}
+header-span{
+  display:inline-block;
+}
+nav{
+  text-align:right;
+  flex-grow:1;
+  justify-content: center;
+  display:block;
+}
+.headercontainer{
+  display:flex;
+}
+nav span{
+  display: inline-block;
+}
+.maintitle{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height:700px;
+  width:1200px;
+  margin: auto;
+  display:flex;
+  padding-top:70px;
+}
+.maincontext{
+  background-color: black;
+  margin:auto;
+  width: 100%;
+  height: 103px;
+  align-items: center;
+}
+h2{
+  padding:10px;
+  margin: 0;
+}
+h4{
+  margin:0;
+  padding:10px;
+}
+.monthtitle{
+  align-items: center;
+}
+.image1,.image2,.image3,.image4,.image5{
+  width:300px;
+  height:200px;
+  padding:5px;
+  display: block;
+}
+.images{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.item{
+  display: block;
+  margin: 10px;
+}
+.span{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+.container{
+  display: block;
+}
+.locations{
+  background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.box{
+  background-color: black;
+  width:300px;
+  height: 240px;
+  justify-content: center;
+  flex-basis:280px;
+  opacity: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px;
+}
+.locs{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.loctext{
+  margin: 0;
+  display: block;
+}
+h3{
+  padding:10px;
+}
+footer{
+  text-align: left;
+  padding-left: 10px;
+}
+
