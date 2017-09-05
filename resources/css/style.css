@@ -11,10 +11,20 @@ body{
 	  border-bottom: 1px solid seashell;
 	  align-items: center;
 	  height: 69px;
+	  position:fixed;
+	  background-color:black;
+	  width:100%;
+	  display:flex;
+	  flex-grow:1;
+	  flex-wrap: wrap;
+	  justify-content:center;
 	}
 	header img{
 	  height: 50px;
 	  padding-left: 10px;
+	  display:flex;
+	  align-items: center;
+	  flex-grow:1;
 	}
 	header a{
 	  color:seashell;
@@ -36,6 +46,7 @@ body{
 	nav span{
 	  display: inline-block;
 	}
+
 
 .maintitle{
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
