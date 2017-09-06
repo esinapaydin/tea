@@ -94,6 +94,9 @@ h4{
   font-weight: bold;
   text-align: center;
 }
+.container{
+  padding-top: 70px;		
+}
 .locations{
   background-image:url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
   height: 500px;
@@ -101,7 +104,8 @@ h4{
   margin: auto;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  margin-top: 40px;
+  padding-top: 30px;
 }
 .box{
   background-color: black;
@@ -125,6 +129,7 @@ h4{
 .loctext{
   margin: 0;
   display: block;
+  padding-top: 40px;
 }
 h3{
   padding:10px;
